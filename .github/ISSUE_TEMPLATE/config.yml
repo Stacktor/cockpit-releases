@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Fehler aus der App melden (empfohlen)
+    url: https://cockpit.mesco.cc/hilfe/
+    about: In cockpit unter Feedback → Fehler melden. Version und Protokoll gehen dann gleich mit.
+  - name: Sicherheitslücke
+    url: https://github.com/Stacktor/cockpit-releases/blob/main/SECURITY.md
+    about: Bitte nicht öffentlich melden, sondern per Mail.

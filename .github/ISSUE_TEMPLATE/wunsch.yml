@@ -1,0 +1,15 @@
+name: Wunsch
+description: Eine Idee, was cockpit besser machen könnte.
+labels: ["wunsch"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Was fehlt dir?
+      description: Beschreib die Situation, nicht nur die Lösung. Was willst du erreichen?
+    validations:
+      required: true
+  - type: textarea
+    id: idee
+    attributes:
+      label: Wie könnte es aussehen? (optional)
