@@ -1,0 +1,37 @@
+name: Fehler
+description: Etwas funktioniert nicht wie erwartet.
+labels: ["fehler"]
+body:
+  - type: textarea
+    id: was
+    attributes:
+      label: Was ist passiert?
+      description: Was hast du gemacht, was hast du erwartet, was kam stattdessen?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Steht unten links in der App oder unter Einstellungen → System.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - Windows (EXE)
+        - Windows (MSI)
+        - Linux (AppImage)
+        - Linux (deb)
+        - Browser-Erweiterung
+    validations:
+      required: true
+  - type: textarea
+    id: protokoll
+    attributes:
+      label: Fehlermeldung oder Protokoll (optional)
+      description: Bitte keine Bewerbungsdaten, Passwörter oder API-Schlüssel einfügen.
+      render: text

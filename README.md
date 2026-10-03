@@ -14,6 +14,7 @@ Gerät lässt. Website: **[cockpit.mesco.cc](https://cockpit.mesco.cc)**
 | **Linux** x86_64 | ✅ verfügbar | [`cockpit-linux-x86_64.AppImage`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-linux-x86_64.AppImage) · [`cockpit-linux-amd64.deb`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-linux-amd64.deb) |
 | **macOS** | 🚧 in Arbeit | vorerst kein Installer |
 | **iPhone · iPad** | 🚧 in Arbeit | vorerst nicht verfügbar |
+| **Browser-Erweiterung** Chrome/Edge | ✅ verfügbar | [`cockpit-extension.zip`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-extension.zip) |
 
 Die Dateinamen bleiben über alle Versionen gleich, Links darauf funktionieren also dauerhaft.
 Alle Versionen stehen unter [Releases](https://github.com/Stacktor/cockpit-releases/releases),
@@ -27,6 +28,13 @@ was sich geändert hat im [Changelog](https://cockpit.mesco.cc/changelog/).
 - **Linux (AppImage):** `chmod +x cockpit-linux-x86_64.AppImage`, dann starten. Fehlt FUSE:
   `sudo apt install libfuse2`. Gebraucht werden WebKitGTK 4.1 und ein Schlüsselbund
   (GNOME-Schlüsselbund oder KWallet) für Passwörter und API-Schlüssel.
+- **Windows: EXE oder MSI?** Die `.exe` installiert ohne Adminrechte für dein Konto und ist für
+  die meisten die richtige Wahl. Das `.msi` ist für Firmenrechner und Verteilung per Software-
+  verwaltung gedacht. Beide aktualisieren sich selbst.
+- **Browser-Erweiterung:** ZIP entpacken, `chrome://extensions` (bzw. `edge://extensions`)
+  öffnen, den Entwicklermodus einschalten, „Entpackte Erweiterung laden“ und den Ordner wählen.
+  In cockpit unter Einstellungen → Verbindungen einen Kopplungscode erzeugen und im Popup
+  eingeben. In den Chrome Web Store kommt sie später.
 - **Einrichtung:** Der Willkommens-Assistent führt durch Profil, KI und Alpha-Schlüssel.
   Anleitung: [Erste Schritte](https://cockpit.mesco.cc/hilfe/erste-schritte/).
 
@@ -40,13 +48,16 @@ Die Update-Information (`latest.json`) liegt im jeweils neuesten Release in dies
 
 Bewerbungen, Profil, Dokumente und Mails liegen in einer Datenbank auf deinem Rechner,
 Schlüssel und Passwörter im Schlüsselbund deines Systems. Es gibt kein Konto und keine Telemetrie.
+Der Geräte-Sync ist freiwillig und verschlüsselt alles vorher mit deiner Passphrase.
 → [Datenschutzerklärung](https://cockpit.mesco.cc/datenschutz/)
 
 ## Fehler gefunden?
 
 In der App unter **Feedback → Fehler melden**. Bevor etwas gesendet wird, siehst du genau, was
 rausgeht; das geht auch ohne Lizenz und dann anonym. Alternativ: ein
-[Issue in diesem Repo](https://github.com/Stacktor/cockpit-releases/issues).
+[Issue in diesem Repo](https://github.com/Stacktor/cockpit-releases/issues/new/choose).
+Sicherheitslücken bitte nicht öffentlich melden, sondern wie in [SECURITY.md](SECURITY.md)
+beschrieben.
 
 ## Warum gibt es hier keinen Quellcode?
 
