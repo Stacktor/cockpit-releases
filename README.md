@@ -1,20 +1,20 @@
-# cockpit — Downloads
+# cockpit: Downloads
 
 Fertige Installer von **Bewerbungs-Cockpit**: dem Bewerbungsmanager, der deine Daten auf deinem
 Gerät lässt. Website: **[cockpit.mesco.cc](https://cockpit.mesco.cc)**
 
 > **Status: geschlossene 0.1 Alpha.** Die App läuft ohne Konto. Mit einem Alpha-Schlüssel sind
-> alle Funktionen frei. → [Alpha-Zugang anfragen](https://cockpit.mesco.cc/alpha/)
+> alle Funktionen frei: [Alpha-Zugang anfragen](https://cockpit.mesco.cc/alpha/)
 
 ## Herunterladen
 
 | System | Status | Datei (immer die neueste Version) |
 |---|---|---|
-| **Windows** 10/11, 64 Bit | ✅ verfügbar | [`cockpit-windows-setup.exe`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-windows-setup.exe) · [`cockpit-windows.msi`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-windows.msi) |
-| **Linux** x86_64 | ✅ verfügbar | [`cockpit-linux-x86_64.AppImage`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-linux-x86_64.AppImage) · [`cockpit-linux-amd64.deb`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-linux-amd64.deb) |
-| **macOS** | 🚧 in Arbeit | vorerst kein Installer |
-| **iPhone · iPad** | 🚧 in Arbeit | vorerst nicht verfügbar |
-| **Browser-Erweiterung** Chrome/Edge | ✅ verfügbar | [`cockpit-extension.zip`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-extension.zip) |
+| **Windows** 10/11, 64 Bit | verfügbar | [`cockpit-windows-setup.exe`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-windows-setup.exe) · [`cockpit-windows.msi`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-windows.msi) |
+| **Linux** x86_64 | verfügbar | [`cockpit-linux-x86_64.AppImage`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-linux-x86_64.AppImage) · [`cockpit-linux-amd64.deb`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-linux-amd64.deb) |
+| **macOS** | in Arbeit | vorerst kein Installer |
+| **iPhone · iPad** | in Arbeit | vorerst nicht verfügbar |
+| **Browser-Erweiterung** Chrome/Edge | verfügbar | [`cockpit-extension.zip`](https://github.com/Stacktor/cockpit-releases/releases/latest/download/cockpit-extension.zip) |
 
 Die Dateinamen bleiben über alle Versionen gleich, Links darauf funktionieren also dauerhaft.
 Alle Versionen stehen unter [Releases](https://github.com/Stacktor/cockpit-releases/releases),
@@ -36,7 +36,8 @@ was sich geändert hat im [Changelog](https://cockpit.mesco.cc/changelog/).
   In cockpit unter Einstellungen → Verbindungen einen Kopplungscode erzeugen und im Popup
   eingeben. In den Chrome Web Store kommt sie später.
 - **Einrichtung:** Der Willkommens-Assistent führt durch Profil, KI und Alpha-Schlüssel.
-  Anleitung: [Erste Schritte](https://cockpit.mesco.cc/hilfe/erste-schritte/).
+  Anleitungen: [Erste Schritte](https://cockpit.mesco.cc/hilfe/erste-schritte/) und das
+  [Hilfe-Center](https://cockpit.mesco.cc/hilfe/).
 
 ## Updates
 
@@ -47,14 +48,15 @@ Die Update-Information (`latest.json`) liegt im jeweils neuesten Release in dies
 ## Datenschutz in einem Satz
 
 Bewerbungen, Profil, Dokumente und Mails liegen in einer Datenbank auf deinem Rechner,
-Schlüssel und Passwörter im Schlüsselbund deines Systems. Es gibt kein Konto und keine Telemetrie.
-Der Geräte-Sync ist freiwillig und verschlüsselt alles vorher mit deiner Passphrase.
-→ [Datenschutzerklärung](https://cockpit.mesco.cc/datenschutz/)
+Schlüssel und Passwörter im Schlüsselbund deines Systems. Es gibt kein Konto. Eine anonyme
+Nutzungsstatistik zählt nur, welche Bereiche geöffnet werden, und lässt sich unter
+Einstellungen → System abschalten. Der Geräte-Sync ist freiwillig und verschlüsselt alles vorher
+mit deiner Passphrase. Details: [Datenschutzerklärung](https://cockpit.mesco.cc/datenschutz/)
 
 ## Fehler gefunden?
 
-In der App unter **Feedback → Fehler melden**. Bevor etwas gesendet wird, siehst du genau, was
-rausgeht; das geht auch ohne Lizenz und dann anonym. Alternativ: ein
+In der App unter **Feedback geben → Fehler melden**. Bevor etwas gesendet wird, siehst du genau,
+was rausgeht. Ohne Lizenz geht der Bericht anonym raus. Alternativ: ein
 [Issue in diesem Repo](https://github.com/Stacktor/cockpit-releases/issues/new/choose).
 Sicherheitslücken bitte nicht öffentlich melden, sondern wie in [SECURITY.md](SECURITY.md)
 beschrieben.
@@ -66,6 +68,6 @@ Update-Informationen und die Prüfsummen.
 
 ## Warum kein macOS?
 
-Die Mac-Version lässt sich gerade nicht testen, und ungetestete Installer gebe ich nicht raus.
-Sie kommt zurück, sobald sie wieder getestet werden kann. Wer interessiert ist, kann sich bei der
+Die Mac-Version lässt sich gerade nicht auf echter Hardware testen, und ungetestete Installer
+werden nicht veröffentlicht. Sie folgt, sobald sie getestet werden kann. Wer interessiert ist, kann sich bei der
 [Alpha-Anmeldung](https://cockpit.mesco.cc/alpha/) auf die Mac-Warteliste setzen.
